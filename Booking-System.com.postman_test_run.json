@@ -1,275 +1,30 @@
 {
-	"id": "68a26c11-4ed4-4d97-acc6-01819bc45163",
+	"id": "1c4158a1-ad98-4cf3-8eba-a1e66a8ced46",
 	"name": "Booking-System.com",
-	"timestamp": "2024-07-07T05:33:28.035Z",
+	"timestamp": "2024-07-10T06:49:07.841Z",
 	"collection_id": "36288778-bd3f4a06-7681-4b75-836c-08168e34c40e",
 	"folder_id": 0,
 	"environment_id": "36288778-f1240e01-f2f1-4575-b6ce-fd6b009115c6",
-	"totalPass": 61,
+	"totalPass": 86,
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2024-07-07T05:33:10.473Z",
+	"startedAt": "2024-07-10T06:48:43.847Z",
 	"totalFail": 0,
 	"results": [
-		{
-			"id": "a1e96768-746b-40fa-9234-8ebc3100fd14",
-			"name": "Auth - Create Token",
-			"url": "https://restful-booker.herokuapp.com/auth",
-			"time": 981,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Verify the token is generated": true,
-				"Verify Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Verify the token is generated": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Verify Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				981
-			],
-			"allTests": [
-				{
-					"Verify the token is generated": true,
-					"Verify Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "9cda6239-ac04-4829-8f6f-70001a0ce7ad",
-			"name": "Get All Booking Ids",
-			"url": "https://restful-booker.herokuapp.com/booking",
-			"time": 256,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Verified the Status Code is 200": true,
-				"Verified that in response we are getting bookingids": true
-			},
-			"testPassFailCounts": {
-				"Verified the Status Code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Verified that in response we are getting bookingids": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				256
-			],
-			"allTests": [
-				{
-					"Verified the Status Code is 200": true,
-					"Verified that in response we are getting bookingids": true
-				}
-			]
-		},
-		{
-			"id": "7446cbbb-f2ca-416e-ad9b-61ea8566a0dd",
-			"name": "Create Booking",
-			"url": "https://restful-booker.herokuapp.com/booking",
-			"time": 253,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Verify the Status Code is 200": true,
-				"Verified a valid booking is created": true
-			},
-			"testPassFailCounts": {
-				"Verify the Status Code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Verified a valid booking is created": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				253
-			],
-			"allTests": [
-				{
-					"Verify the Status Code is 200": true,
-					"Verified a valid booking is created": true
-				}
-			]
-		},
-		{
-			"id": "9bf25669-b09f-48b8-b865-adcc33e8ae52",
-			"name": "Get Booking by Id",
-			"url": "https://restful-booker.herokuapp.com/booking/724",
-			"time": 369,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Response body has all required fields": true
-			},
-			"testPassFailCounts": {
-				"Response body has all required fields": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				369
-			],
-			"allTests": [
-				{
-					"Response body has all required fields": true
-				}
-			]
-		},
-		{
-			"id": "5e490edd-3e34-4856-a0fa-af4661a32be2",
-			"name": "Fully Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/724",
-			"time": 459,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Verified the Status Code is 200": true,
-				"Verified that the firstname is Ramesh": true
-			},
-			"testPassFailCounts": {
-				"Verified the Status Code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Verified that the firstname is Ramesh": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				459
-			],
-			"allTests": [
-				{
-					"Verified the Status Code is 200": true,
-					"Verified that the firstname is Ramesh": true
-				}
-			]
-		},
-		{
-			"id": "73d1d99a-1f12-4c46-b5c5-cd61cec9d589",
-			"name": "Partially Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/724",
-			"time": 410,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Verified that the Status code is 200": true,
-				"Verified that the firstname is Rao": true
-			},
-			"testPassFailCounts": {
-				"Verified that the Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Verified that the firstname is Rao": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				410
-			],
-			"allTests": [
-				{
-					"Verified that the Status code is 200": true,
-					"Verified that the firstname is Rao": true
-				}
-			]
-		},
-		{
-			"id": "15427381-0949-42ac-ba78-28a0eb3c9467",
-			"name": "Delete a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/724",
-			"time": 253,
-			"responseCode": {
-				"code": 201,
-				"name": "Created"
-			},
-			"tests": {
-				"Verified that the Booking is deleted with Status code 201": true
-			},
-			"testPassFailCounts": {
-				"Verified that the Booking is deleted with Status code 201": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				253
-			],
-			"allTests": [
-				{
-					"Verified that the Booking is deleted with Status code 201": true
-				}
-			]
-		},
-		{
-			"id": "a5b29695-d1ee-486a-b740-47f3b7eb620d",
-			"name": "API Health Checkup Ping",
-			"url": "https://restful-booker.herokuapp.com/ping",
-			"time": 384,
-			"responseCode": {
-				"code": 201,
-				"name": "Created"
-			},
-			"tests": {
-				"Verified that the API is good with Status Code 201": true
-			},
-			"testPassFailCounts": {
-				"Verified that the API is good with Status Code 201": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				384
-			],
-			"allTests": [
-				{
-					"Verified that the API is good with Status Code 201": true
-				}
-			]
-		},
 		{
 			"id": "51a77449-57b7-488b-8cdb-620d19e1f54c",
 			"name": "Auth - Create Token",
 			"url": "https://restful-booker.herokuapp.com/auth",
-			"time": 423,
+			"time": 1383,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the response token is a string": true
+				"Verified that the response token is a string": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -279,15 +34,20 @@
 				"Verified that the response token is a string": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				423
+				1383
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the response token is a string": true
+					"Verified that the response token is a string": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
@@ -295,14 +55,15 @@
 			"id": "f0aba8d6-0d6b-48ba-a977-51f02535b115",
 			"name": "Create Booking",
 			"url": "https://restful-booker.herokuapp.com/booking",
-			"time": 423,
+			"time": 385,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the booking id created is a number": true
+				"Verified that the booking id created is a number": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -312,30 +73,36 @@
 				"Verified that the booking id created is a number": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				423
+				385
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the booking id created is a number": true
+					"Verified that the booking id created is a number": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
 		{
 			"id": "6c7c06e9-0e74-4f95-a40e-109bf0b5bb10",
 			"name": "Fully Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/755",
-			"time": 255,
+			"url": "https://restful-booker.herokuapp.com/booking/3816",
+			"time": 284,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains James": true
+				"Verified that the firstname contains James": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -345,30 +112,36 @@
 				"Verified that the firstname contains James": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				255
+				284
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains James": true
+					"Verified that the firstname contains James": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "12032f41-b3e9-41e9-8115-f0d5cb2ebc93",
 			"name": "Get Booking by Id",
-			"url": "https://restful-booker.herokuapp.com/booking/755",
-			"time": 386,
+			"url": "https://restful-booker.herokuapp.com/booking/3816",
+			"time": 262,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains James": true
+				"Verified that the firstname contains James": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -378,15 +151,20 @@
 				"Verified that the firstname contains James": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				386
+				262
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains James": true
+					"Verified that the firstname contains James": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
@@ -394,14 +172,15 @@
 			"id": "b330a82a-b286-4177-90bb-9e24d189d2b2",
 			"name": "Auth - Create Token",
 			"url": "https://restful-booker.herokuapp.com/auth",
-			"time": 251,
+			"time": 415,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the response token is a string": true
+				"Verified that the response token is a string": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -411,15 +190,20 @@
 				"Verified that the response token is a string": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				251
+				415
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the response token is a string": true
+					"Verified that the response token is a string": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
@@ -427,14 +211,15 @@
 			"id": "3979cf06-0798-4683-a2ec-482b3f6d6f78",
 			"name": "Create Booking",
 			"url": "https://restful-booker.herokuapp.com/booking",
-			"time": 253,
+			"time": 261,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the booking id created is a number": true
+				"Verified that the booking id created is a number": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -444,30 +229,36 @@
 				"Verified that the booking id created is a number": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				253
+				261
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the booking id created is a number": true
+					"Verified that the booking id created is a number": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
 		{
 			"id": "c132d023-2b01-4e36-a3a6-cfcfbfd886dc",
 			"name": "Partially Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/769",
-			"time": 252,
+			"url": "https://restful-booker.herokuapp.com/booking/3837",
+			"time": 400,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Ratul": true
+				"Verified that the firstname contains Ratul": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -477,30 +268,36 @@
 				"Verified that the firstname contains Ratul": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				252
+				400
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Ratul": true
+					"Verified that the firstname contains Ratul": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "0fda1a8a-ee85-46ad-993f-2142f214f2f6",
 			"name": "Get Booking by Id",
-			"url": "https://restful-booker.herokuapp.com/booking/769",
-			"time": 456,
+			"url": "https://restful-booker.herokuapp.com/booking/3837",
+			"time": 411,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Ratul": true
+				"Verified that the firstname contains Ratul": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -510,15 +307,20 @@
 				"Verified that the firstname contains Ratul": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				456
+				411
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Ratul": true
+					"Verified that the firstname contains Ratul": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
@@ -526,14 +328,15 @@
 			"id": "6c1f7459-b411-40c0-af89-af63dc318cb2",
 			"name": "Auth - Create Token",
 			"url": "https://restful-booker.herokuapp.com/auth",
-			"time": 398,
+			"time": 432,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the response token is a string": true
+				"Verified that the response token is a string": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -543,15 +346,20 @@
 				"Verified that the response token is a string": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				398
+				432
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the response token is a string": true
+					"Verified that the response token is a string": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
@@ -559,14 +367,15 @@
 			"id": "46ae68e8-db93-4d82-92d4-d84ac4790320",
 			"name": "Create Booking",
 			"url": "https://restful-booker.herokuapp.com/booking",
-			"time": 252,
+			"time": 437,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the booking id created is a number": true
+				"Verified that the booking id created is a number": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -576,30 +385,36 @@
 				"Verified that the booking id created is a number": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				252
+				437
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the booking id created is a number": true
+					"Verified that the booking id created is a number": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
 		{
 			"id": "a5e6c2fc-2bbe-4ea7-9b44-0195fd79e744",
 			"name": "Fully Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/786",
-			"time": 463,
+			"url": "https://restful-booker.herokuapp.com/booking/3871",
+			"time": 270,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Sunoyoni": true
+				"Verified that the firstname contains Sunoyoni": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -609,23 +424,28 @@
 				"Verified that the firstname contains Sunoyoni": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				463
+				270
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Sunoyoni": true
+					"Verified that the firstname contains Sunoyoni": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "5345bef8-4a1a-4e2c-8d09-356024ad3f6e",
 			"name": "Delete a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/786",
-			"time": 352,
+			"url": "https://restful-booker.herokuapp.com/booking/3871",
+			"time": 464,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -640,7 +460,7 @@
 				}
 			},
 			"times": [
-				352
+				464
 			],
 			"allTests": [
 				{
@@ -651,8 +471,8 @@
 		{
 			"id": "acb2ed30-cfef-4868-b84d-506908dbd3bf",
 			"name": "Get Booking by Id",
-			"url": "https://restful-booker.herokuapp.com/booking/786",
-			"time": 401,
+			"url": "https://restful-booker.herokuapp.com/booking/3871",
+			"time": 374,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -667,7 +487,7 @@
 				}
 			},
 			"times": [
-				401
+				374
 			],
 			"allTests": [
 				{
@@ -679,14 +499,15 @@
 			"id": "72981926-d3f0-40c5-9c3e-880077952fc3",
 			"name": "Auth - Create Token",
 			"url": "https://restful-booker.herokuapp.com/auth",
-			"time": 258,
+			"time": 377,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the response token is a string": true
+				"Verified that the response token is a string": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -696,15 +517,20 @@
 				"Verified that the response token is a string": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				258
+				377
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the response token is a string": true
+					"Verified that the response token is a string": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
@@ -712,14 +538,15 @@
 			"id": "5a6efdeb-7d37-4be0-8cd1-c6e9d5086288",
 			"name": "Create Booking",
 			"url": "https://restful-booker.herokuapp.com/booking",
-			"time": 251,
+			"time": 314,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the booking id created is a number": true
+				"Verified that the booking id created is a number": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -729,30 +556,36 @@
 				"Verified that the booking id created is a number": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				251
+				314
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the booking id created is a number": true
+					"Verified that the booking id created is a number": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
 		{
 			"id": "9e03fb9a-ce02-4a52-9e35-d9b4458f7c88",
 			"name": "Partially Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/802",
-			"time": 252,
+			"url": "https://restful-booker.herokuapp.com/booking/3891",
+			"time": 399,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Sunoyoni": true
+				"Verified that the firstname contains Sunoyoni": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -762,23 +595,28 @@
 				"Verified that the firstname contains Sunoyoni": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				252
+				399
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Sunoyoni": true
+					"Verified that the firstname contains Sunoyoni": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "2651b4e5-7b26-4543-a9a3-ad80774255bf",
 			"name": "Delete a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/802",
-			"time": 251,
+			"url": "https://restful-booker.herokuapp.com/booking/3891",
+			"time": 519,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -793,7 +631,7 @@
 				}
 			},
 			"times": [
-				251
+				519
 			],
 			"allTests": [
 				{
@@ -804,8 +642,8 @@
 		{
 			"id": "b0990b29-12bb-47bc-abb6-3c65b2b50bde",
 			"name": "Get Booking by Id",
-			"url": "https://restful-booker.herokuapp.com/booking/802",
-			"time": 253,
+			"url": "https://restful-booker.herokuapp.com/booking/3891",
+			"time": 262,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -820,7 +658,7 @@
 				}
 			},
 			"times": [
-				253
+				262
 			],
 			"allTests": [
 				{
@@ -832,14 +670,15 @@
 			"id": "b404d634-886a-472b-bb94-842ccb987aba",
 			"name": "Auth - Create Token",
 			"url": "https://restful-booker.herokuapp.com/auth",
-			"time": 431,
+			"time": 423,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the response token is a string": true
+				"Verified that the response token is a string": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -849,15 +688,20 @@
 				"Verified that the response token is a string": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				431
+				423
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the response token is a string": true
+					"Verified that the response token is a string": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
@@ -865,14 +709,15 @@
 			"id": "e5862d67-92de-48f8-828d-21da8e0e8b72",
 			"name": "Create Booking",
 			"url": "https://restful-booker.herokuapp.com/booking",
-			"time": 452,
+			"time": 313,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the booking id created is a number": true
+				"Verified that the booking id created is a number": true,
+				"Schema is valid / Each and every data type requirement are verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -882,30 +727,36 @@
 				"Verified that the booking id created is a number": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				452
+				313
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the booking id created is a number": true
+					"Verified that the booking id created is a number": true,
+					"Schema is valid / Each and every data type requirement are verified": true
 				}
 			]
 		},
 		{
 			"id": "774ea94a-de38-4f92-bccd-958525e50613",
 			"name": "Verify new Booking by Booking Id",
-			"url": "https://restful-booker.herokuapp.com/booking/821",
-			"time": 416,
+			"url": "https://restful-booker.herokuapp.com/booking/3915",
+			"time": 398,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Bala": true
+				"Verified that the firstname contains Bala": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -915,30 +766,36 @@
 				"Verified that the firstname contains Bala": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				416
+				398
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Bala": true
+					"Verified that the firstname contains Bala": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "78207608-b308-412f-8d53-eb8d43ec0d97",
 			"name": "Partially Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/821",
-			"time": 414,
+			"url": "https://restful-booker.herokuapp.com/booking/3915",
+			"time": 298,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Sunoyoni": true
+				"Verified that the firstname contains Sunoyoni": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -948,30 +805,36 @@
 				"Verified that the firstname contains Sunoyoni": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				414
+				298
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Sunoyoni": true
+					"Verified that the firstname contains Sunoyoni": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "798aac74-dbab-4e47-b29e-8f427ebc7741",
 			"name": "Verify Partial Update by Booking Id",
-			"url": "https://restful-booker.herokuapp.com/booking/821",
-			"time": 419,
+			"url": "https://restful-booker.herokuapp.com/booking/3915",
+			"time": 319,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Pele": true
+				"Verified that the firstname contains Pele": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -981,30 +844,36 @@
 				"Verified that the firstname contains Pele": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				419
+				319
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Pele": true
+					"Verified that the firstname contains Pele": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "5f7f03e9-11c1-46a2-8e0e-4c1c0053a3c3",
 			"name": "Fully Update a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/821",
-			"time": 314,
+			"url": "https://restful-booker.herokuapp.com/booking/3915",
+			"time": 529,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Bando": true
+				"Verified that the firstname contains Bando": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -1014,30 +883,36 @@
 				"Verified that the firstname contains Bando": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				314
+				529
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Bando": true
+					"Verified that the firstname contains Bando": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "6d632e64-4bfb-43bb-a286-5875d0164645",
 			"name": "Verify Fully Update by Booking Id",
-			"url": "https://restful-booker.herokuapp.com/booking/821",
-			"time": 442,
+			"url": "https://restful-booker.herokuapp.com/booking/3915",
+			"time": 427,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Verified the Status Code is 200": true,
-				"Verified that the firstname contains Pele": true
+				"Verified that the firstname contains Pele": true,
+				"Schema is valid / Each and every data type requirement is verified": true
 			},
 			"testPassFailCounts": {
 				"Verified the Status Code is 200": {
@@ -1047,23 +922,28 @@
 				"Verified that the firstname contains Pele": {
 					"pass": 1,
 					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
 				}
 			},
 			"times": [
-				442
+				427
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 200": true,
-					"Verified that the firstname contains Pele": true
+					"Verified that the firstname contains Pele": true,
+					"Schema is valid / Each and every data type requirement is verified": true
 				}
 			]
 		},
 		{
 			"id": "b13baf1f-d8f2-4189-a538-81c3994bee97",
 			"name": "Delete a Booking",
-			"url": "https://restful-booker.herokuapp.com/booking/821",
-			"time": 449,
+			"url": "https://restful-booker.herokuapp.com/booking/3915",
+			"time": 439,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -1078,7 +958,7 @@
 				}
 			},
 			"times": [
-				449
+				439
 			],
 			"allTests": [
 				{
@@ -1089,8 +969,8 @@
 		{
 			"id": "6bece6ab-7be3-4e78-9a16-330ff951d122",
 			"name": "Verify the Deleted Booking by Booking Id",
-			"url": "https://restful-booker.herokuapp.com/booking/821",
-			"time": 437,
+			"url": "https://restful-booker.herokuapp.com/booking/3915",
+			"time": 431,
 			"responseCode": {
 				"code": 404,
 				"name": "Not Found"
@@ -1105,51 +985,289 @@
 				}
 			},
 			"times": [
-				437
+				431
 			],
 			"allTests": [
 				{
 					"Verified the Status Code is 404 Not found": true
 				}
 			]
+		},
+		{
+			"id": "baa911ba-471a-4545-97d2-2e8c41bc1f5d",
+			"name": "Authentication Request",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 382,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verified the Status Code is 200": true,
+				"Verified that the response is a token & it's a string": true,
+				"Schema is valid / Each and every data type requirement are verified": true
+			},
+			"testPassFailCounts": {
+				"Verified the Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verified that the response is a token & it's a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				382
+			],
+			"allTests": [
+				{
+					"Verified the Status Code is 200": true,
+					"Verified that the response is a token & it's a string": true,
+					"Schema is valid / Each and every data type requirement are verified": true
+				}
+			]
+		},
+		{
+			"id": "c29bc779-eae7-4cf0-85ab-97e4610491d8",
+			"name": "Get all Booking ids",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 937,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verified the Status Code is 200": true,
+				"Verified that the response is an Object": true,
+				"Schema is valid / Each and every data type requirement are verified": true
+			},
+			"testPassFailCounts": {
+				"Verified the Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verified that the response is an Object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				937
+			],
+			"allTests": [
+				{
+					"Verified the Status Code is 200": true,
+					"Verified that the response is an Object": true,
+					"Schema is valid / Each and every data type requirement are verified": true
+				}
+			]
+		},
+		{
+			"id": "707a1596-6fbf-47dd-b36f-712d753dc1fa",
+			"name": "Create New Booking",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 416,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verified the Status Code is 200": true,
+				"Verified that the booking id created is a number": true,
+				"Schema is valid / Each and every data type requirement are verified": true
+			},
+			"testPassFailCounts": {
+				"Verified the Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verified that the booking id created is a number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement are verified": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				416
+			],
+			"allTests": [
+				{
+					"Verified the Status Code is 200": true,
+					"Verified that the booking id created is a number": true,
+					"Schema is valid / Each and every data type requirement are verified": true
+				}
+			]
+		},
+		{
+			"id": "5fd823f9-d4e4-4454-b10d-0145b74627d4",
+			"name": "Get Booking by ID",
+			"url": "https://restful-booker.herokuapp.com/booking/3959",
+			"time": 445,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verified that the Status code is 200": true,
+				"Schema is valid / Each and every data type requirement is verified": true
+			},
+			"testPassFailCounts": {
+				"Verified that the Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				445
+			],
+			"allTests": [
+				{
+					"Verified that the Status code is 200": true,
+					"Schema is valid / Each and every data type requirement is verified": true
+				}
+			]
+		},
+		{
+			"id": "17ab2491-07f0-4c07-beea-e745c3c5b19c",
+			"name": "Fully Updating a Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/3959",
+			"time": 428,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verified the status code is 200": true,
+				"Schema is valid / Each and every data type requirement is verified": true
+			},
+			"testPassFailCounts": {
+				"Verified the status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				428
+			],
+			"allTests": [
+				{
+					"Verified the status code is 200": true,
+					"Schema is valid / Each and every data type requirement is verified": true
+				}
+			]
+		},
+		{
+			"id": "a8adaa49-1b42-42c3-9f0e-ec3661b2d322",
+			"name": "Partially Updating a Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/3959",
+			"time": 447,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verified that the status code is 200": true,
+				"Schema is valid / Each and every data type requirement is verified": true
+			},
+			"testPassFailCounts": {
+				"Verified that the status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid / Each and every data type requirement is verified": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				447
+			],
+			"allTests": [
+				{
+					"Verified that the status code is 200": true,
+					"Schema is valid / Each and every data type requirement is verified": true
+				}
+			]
+		},
+		{
+			"id": "7eab01ca-dae4-468b-ab03-c0240ad6b6f9",
+			"name": "Delete a Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/3959",
+			"time": 503,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Verified that the status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Verified that the status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				503
+			],
+			"allTests": [
+				{
+					"Verified that the status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "0e5da5e9-0f3a-44db-adf7-8d3cb2ca7fb6",
+			"name": "API Health Check Request",
+			"url": "https://restful-booker.herokuapp.com/ping",
+			"time": 370,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Verified that the Status Code is 201": true
+			},
+			"testPassFailCounts": {
+				"Verified that the Status Code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				370
+			],
+			"allTests": [
+				{
+					"Verified that the Status Code is 201": true
+				}
+			]
 		}
 	],
 	"count": 1,
-	"totalTime": 12969,
+	"totalTime": 15154,
 	"collection": {
 		"requests": [
-			{
-				"id": "a1e96768-746b-40fa-9234-8ebc3100fd14",
-				"method": "POST"
-			},
-			{
-				"id": "9cda6239-ac04-4829-8f6f-70001a0ce7ad",
-				"method": "GET"
-			},
-			{
-				"id": "7446cbbb-f2ca-416e-ad9b-61ea8566a0dd",
-				"method": "POST"
-			},
-			{
-				"id": "9bf25669-b09f-48b8-b865-adcc33e8ae52",
-				"method": "GET"
-			},
-			{
-				"id": "5e490edd-3e34-4856-a0fa-af4661a32be2",
-				"method": "PUT"
-			},
-			{
-				"id": "73d1d99a-1f12-4c46-b5c5-cd61cec9d589",
-				"method": "PATCH"
-			},
-			{
-				"id": "15427381-0949-42ac-ba78-28a0eb3c9467",
-				"method": "DELETE"
-			},
-			{
-				"id": "a5b29695-d1ee-486a-b740-47f3b7eb620d",
-				"method": "GET"
-			},
 			{
 				"id": "51a77449-57b7-488b-8cdb-620d19e1f54c",
 				"method": "POST"
@@ -1256,6 +1374,38 @@
 			},
 			{
 				"id": "6bece6ab-7be3-4e78-9a16-330ff951d122",
+				"method": "GET"
+			},
+			{
+				"id": "baa911ba-471a-4545-97d2-2e8c41bc1f5d",
+				"method": "POST"
+			},
+			{
+				"id": "c29bc779-eae7-4cf0-85ab-97e4610491d8",
+				"method": "GET"
+			},
+			{
+				"id": "707a1596-6fbf-47dd-b36f-712d753dc1fa",
+				"method": "POST"
+			},
+			{
+				"id": "5fd823f9-d4e4-4454-b10d-0145b74627d4",
+				"method": "GET"
+			},
+			{
+				"id": "17ab2491-07f0-4c07-beea-e745c3c5b19c",
+				"method": "PUT"
+			},
+			{
+				"id": "a8adaa49-1b42-42c3-9f0e-ec3661b2d322",
+				"method": "PATCH"
+			},
+			{
+				"id": "7eab01ca-dae4-468b-ab03-c0240ad6b6f9",
+				"method": "DELETE"
+			},
+			{
+				"id": "0e5da5e9-0f3a-44db-adf7-8d3cb2ca7fb6",
 				"method": "GET"
 			}
 		]
